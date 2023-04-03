@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binding Event Handler Attribute with JavaScript</title>
+</head>
+<body>
+    <p id="pDemoOver" style="border: 2px solid black; display: inline-block; padding: 5px; margin: 5px;">Click Me</p>
+    <br>
+    <p id="pDemo" style="border: 2px solid black; display: inline-block; padding: 5px; margin: 5px;">Click Me</p>
+    <script>
+        function showAlert() 
+        {
+            alert("Mouse over me")
+        }
+        document.getElementById("pDemoOver").onmouseover=showAlert;
+    </script>
+    <script>
+        document.getElementById("pDemo").onclick=function(){
+            alert("You Clicked me")
+        };
+    </script>
+    <br>
+    <a href="https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en" id="gnews" onclick="confirm('Do you want to visit google News ?') " >Google News</a>
+</body>
+</html>

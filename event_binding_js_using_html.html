@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Binding / Handling in JSusing HTML</title>
+    <style>
+        label[for]{
+            cursor: pointer;
+            cursor: hand;
+        }
+        li{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body onload="alert('Event Demo has loaded ...')" onunload="alert('Leaving Demo ...')">
+    <form  onreset="alert('Form Reset')" onsubmit="alert('Form Submit')">
+        <ul>
+            <li>
+                <label for="fonblur">onblur</label>
+                <input type="text" value="Click into field and then leave" size="40" id="fonblur" onblur="alert('Lost Focus')">
+            </li>
+            <li>
+                <label for="fonclick">onclick</label>
+                <input type="button" value="Click me" id="fonclick" onclick="alert('Button is clicked')">
+            </li>
+            <li>
+                <label for="fonchange"></label>
+                <input type="text" value="Change this text then leave" size="40" id="fonchange" onchange="alert('Changed')">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

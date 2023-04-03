@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in CSS3</title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: peachpuff;
+        }
+    </style>
+    <style>
+        td.money {padding: 7px 10px 10px 7px;}
+        table.table1 {
+            font-family: Arial, Helvetica, sans-serif; 
+            color: #111111; 
+            width: 600px; 
+            border-style: dashed;
+            background-image: url(whylinux.jpg);
+        }
+    </style>
+    <style>
+        th.money {
+            padding: 7px 10px 10px 7px; 
+            border-style: dotted;
+        }
+        td.money {
+            padding: 7px 10px 10px 7px; 
+            border-style: solid; 
+            border-color: blue;
+        }
+    </style>
+    <style>
+        td.even {
+            border-style: dotted; 
+            border-color: blueviolet; 
+            border-width: 2px;
+        }
+    </style>
+     <style>
+        table.gaps-in-cells {
+            font-family: Arial, Helvetica, sans-serif; 
+            color: #111111; width: 200px; 
+            border-style: dashed;
+            border-spacing: 10px 15px;
+        }
+    </style>
+    <style>
+        table.gaps-in-cells2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111111;
+            width: 200px;
+            border-style: dashed;
+            border-collapse: collapse;}
+    </style>
+   <style>
+        td.test{
+            border-style: dotted; 
+            border-color: blueviolet; 
+            border-width: 2px;}
+    </style>
+</head>
+<body>
+    <h1>First Edition Auctions</h1>
+    <table class="table1">
+        <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th class="money">Reserve Price</th>
+            <th class="money">Current Bid</th>
+        </tr>
+        <tr>
+            <td>E E Cummins</td>
+            <td>Tulips and Chimneys</td>
+            <td class="money">$1000</td>
+            <td class="money">$1500</td>
+        </tr>
+        <tr>
+            <td class="even">Charles Williams</td>
+            <td>Poems</td>
+            <td class="money"></td>
+            <td class="money">$1200</td>
+        </tr>
+    </table>
+    <br>
+    <table class="gaps-in-cells">
+        <tr>
+            <td class="test">1</td>
+            <td class="test">2</td>
+        </tr>
+    </table>
+    <table class="gaps-in-cells2">
+        <tr>
+            <td class="test">3</td>
+            <td class="test">4</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JSON Program</title>
+</head>
+<body>
+    <h2>JSON User Account Example ...</h2>
+    <p id="demo"></p>
+    <script>
+        const user = '{"FName":"Ayush" , "Name":"Jerath" , "PhoneNumbers":["9643748598 ", " 9999111232"]}';
+        const obj1 = JSON.parse(user);
+        document.getElementById("demo").innerHTML = obj1.FName + "<br>" + obj1.LName + "<br>" + obj1.PhoneNumbers[0];
+    </script>
+</body>
+</html>

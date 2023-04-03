@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<headeta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        textarea{
+            border: 2px solid black;
+        }
+        form{
+            margin: 20px;
+            color: blue;
+            padding: 15px;
+            background-color: antiquewhite;
+        }
+        input[type = text], input[type = password]{
+            padding: 8px 15px;
+            margin: 4px 0px;
+            border: 2px solid black;  
+        }
+        input[type = text]:focus{
+            background-color: lightblue;
+        }
+    </style>
+    <title>A HTML Form</title>
+</head>
+<body>
+    <form action="www.vitbhopal.ac.in/subscribe.php" method="get">
+        <p>
+            This is where the form controls will appear.
+        </p>
+    </form>
+    <form action="http://www.example.com/login.php">
+        <p>Username : 
+            <input type="text" name="username" size="15" maxlength="30">
+        </p>
+        <p>
+            Password : 
+            <input type="password" name="password" size="15" maxlength="30">
+        </p>
+    </form>
+
+    <p><b><em>Text Area follows ...</em></b></p>
+    <form action="http://www.example.com/comments.php">
+        <p>What do you thing of this gigs?
+            <br>
+            <textarea name="comments" cols="20" rows="5"
+            placeholder="Enter your Comments..."></textarea>
+        </p>
+    </form>
+
+    <p><b><em>Radio Buttons follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php">
+        <p>Please select your favourite genre :
+            <br>
+            <input type="radio" name="genre" value="rock" checked="checked"/> Rock 
+            <input type="radio" name="genre" value="pop"/> Pop 
+            <input type="radio" name="genre" value="jazz"/> Jazz
+        </p>
+    </form>
+
+    <p><b><em>Checkboxes follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php">
+        <p>Please select your favourite music service (s):
+            <br>
+            <input type="checkbox" name="service" value="iTunes" checked="checked"/> iTunes
+            <input type="checkbox" name="service" value="lastfm"/> Last.fm
+            <input type="checkbox" name="service" value="Spotify"/> Spotify
+        </p>
+    </form>
+
+    <p><b><em>Drop Down Boxes follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php">
+        <p>What device do you listen music on?
+            <br>
+            <select name="devices">
+                <option value="iPod"> iPod </option>
+                <option value="radio"> Radio </option>
+                <option value="computer"> Computer </option>
+            </select>
+        </p>
+    </form>
+
+    <p><b><em>Multiple Select Box follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php">
+        <p>Do you play any of the following instruments?
+            (You can select more than one option by holding command key whilke selecting different option)
+            <br>
+            <select name="instruments" size="3" multiple="multiple" style="margin-top: 5px;">
+                <option value="guitar" selected="selected"> Guitar </option>
+                <option value="drums"> Drums </option>
+                <option value="keyboard"> Keyboard </option>
+                <option value="bass"> Bass </option>
+            </select>
+       </p>
+    </form>
+
+    <p><b><em>File Input Box follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php" method="post">
+        <p>Upload your song in mp3 format : 
+            <br>
+            <input type="file" name="user-song"/>
+            <br>
+            <input type="submit" value="Upload"/>
+       </p>
+    </form>
+
+    <p><b><em>Image Button follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php" method="post">
+        <p>Subscribe to our email list : 
+            <br>
+            <input type="text" name="email"/>
+            <br>
+            <input type="image" src="Subscribe 1.png" width="200" height="100"/>
+       </p>
+    </form>
+
+    <p><b><em>Button and Hidden Controls follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php">
+        <button><img src="random image.jpeg" alt="add" width="300" height="300"/></button>
+        <input type="hidden" name="bookmark" value="lyrics"/>
+    </form>
+    
+    
+    
+    <br>
+    <p><b><em>Labelling Form Controls follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php">
+        <label>Age: <input type="text" name="age"/> </label>
+        <br>
+        Gender:
+        <input id="female" type="radio" name="gender" value="f">
+        <label for="female"> Female </label>
+        <input id="male" type="radio" name="gender" value="m">
+        <label for="male"> Male </label>
+    </form>
+
+    
+    <br>
+    <p><b><em>Grouping Form Elements follows ...</em></b></p>
+    <form action="http://www.example.com/profile.php">
+        <fieldset>
+            <legend>Contact Details : </legend>
+            <label>Email: <br>
+            <input type="text" name="email"/></label><br>
+    
+            <label>Mobile: <br>
+            <input type="text" name="mobile"/></label><br>
+    
+            <label>Telephone: <br>
+            <input type="text" name="telephone"/></label><br>
+        </fieldset>
+    </form>
+
+    <br>
+    <p><b><em>HTML File form Validation follows ...</em></b></p>
+    <form action="http://www.example.com/login.php" method="post">
+        <label for="username"> Username : </label>
+        <input type="text" name="username" required="required"><br>
+        <label for="password"> Password : </label>
+        <input type="password" name="password" required="required"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <p><b><em>HTML Date, Email and URL follows ...</em></b></p>
+    <form action="http://www.example.com/booking.php" method="post">
+        <label for="username"> Departure Date : </label>
+        <input type="date" name="username" name="dep_date"><br>
+
+        <p>Please Enter your Email Address : </p>
+        <input type="email" name="email"><br>
+
+        <p>Please enter your website address : </p>
+        <input type="url" name="website">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <p><b><em>Search option in HTML5 follows ...</em></b></p>
+    <form action="http://www.example.com/search.php" method="post">
+        <p>Search: </p>
+        <input type="search" name="search" placeholder="Enter Keyword" required="required">
+
+        <input type="submit" value="Search">
+    </form>
+
+    <br>
+    <p><b><em>iframe option in HTML5 follows ...</em></b></p>
+    <form action="http://www.example.com/search.php" method="post">
+        <iframe src="https://www.scienceofpeople.com" width="900" height="400"><br></iframe>
+    </form>
+</body>
+</html>

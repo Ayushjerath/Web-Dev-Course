@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border, Margin and Padding in CSS3</title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: peachpuff;
+        }
+    </style>
+    <style>
+        p.one {
+            border-style: solid;
+        }
+
+        p.two {
+            border-style: dotted;
+        }
+
+        p.three {
+            border-style: dashed;
+        }
+
+        p.four {
+            border-style: double;
+        }
+
+        p.five {
+            border-style: groove;
+        }
+
+        p.six {
+            border-style: inset;
+        }
+
+        p.seven {
+            border-style: outset;
+        }
+    </style>
+    <style>
+        p.eight {
+            border-style: solid;
+            border-color: #0088dd;
+        }
+
+        p.nine {
+            border-style: solid;
+            border-color: #bbbbaa #111111 #ee3e80 #0088dd;
+        }
+    </style>
+    <style>
+        p.example {
+            padding: 20px;
+            width: 275px;
+            border: 2px solid #0088dd;
+        }
+    </style>
+    <style>
+        p.example1 {
+            width: 200px;
+            border: 2px solid #0088dd;
+            padding: 10px;
+            margin: 30px;
+        }
+    </style>
+    <style>
+        p.example2 {
+            width: 200px;
+            border: 2px solid #0088dd;
+            padding: 10px;
+            margin: 30px;
+            text-align: center;
+        }
+    </style>
+    <style>
+        p.example3 {
+            width: 200px;
+            border: 2px solid #0088dd;
+            padding: 10px;
+            margin: 30px;
+            text-align: left;
+        }
+    </style>
+    <style>
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        li.comingsoon {
+            display: none;
+        }
+    </style>
+    <style>
+        p.Rounded-Corners {
+            border: 5px solid #cccccc;
+            padding: 20px;
+            width: 275px;
+            text-align:center;
+            border-radius: 10px;
+        }
+    </style>
+    <style>
+        p.Elliptical-Shapes1 {
+            border: 5px solid red;
+            padding: 20px;
+            width: 275px;
+            border-top-left-radius: 80px 50px;
+        }
+
+        p.Elliptical-Shapes2 {
+            border: 5px solid red;
+            padding: 20px;
+            width: 275px;
+            border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+        }
+
+        p.Elliptical-Shapes3 {
+            border: 5px solid red;
+            padding: 20px;
+            width: 275px;
+            padding: 20px;
+            border-radius: 100px;
+        }
+    </style>
+    <style>
+        ol.Bullet-Styles1 {
+            list-style-type: lower-roman;
+            margin: auto;
+        }
+    </style>
+    <style>
+        ul.image-style1 {
+            list-style: inside circle;
+            width: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="one">Welcome to HTML and CSS course with Rouf!</p>
+    <p class="two">Welcome to HTML and CSS course with Rouf!</p>
+    <p class="three">Welcome to HTML and CSS course with Rouf!</p>
+    <p class="four">Welcome to HTML and CSS course with Rouf!</p>
+    <p class="five">Welcome to HTML and CSS course with Rouf!</p>
+    <p class="six">Welcome to HTML and CSS course with Rouf!</p>
+    <p class="seven">Welcome to HTML and CSS course with Rouf!</p>
+
+    <p class="eight">CSS4 is undefined!</p>
+    <p class="nine">CSS4 is undefined!</p>
+    <p class="example">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae magnam doloribus architecto! Possimus impedit deleniti vel maxime ullam sequi ipsum. Nihil vitae in odit delectus eius magnam molestiae repellendus quidem.
+    </p>
+    <p class="example1">The margin property controls the gaps between boxes!</p>
+
+    <p class="example2">Centering the Content!</p>
+    <p class="example3">Indenting the Content to Left!</p>
+
+    <ul>
+        <li>Home</li>
+        <li>Products</li>
+        <li class="comingsoon">Services</li>
+        <li>About</li>
+    </ul>
+
+    <p class="Rounded-Corners">CSS3 introduces the ability to create rounded corners on any box,
+        using a property called border-radius
+    </p>
+
+    <p class="Elliptical-Shapes1"></p>
+    <p class="Elliptical-Shapes2"></p>
+    <p class="Elliptical-Shapes3"></p>
+
+    <h1>The Complete Poems</h1>
+    <h2>Emily</h2>
+    <ol class="Bullet-Styles1">
+        <li>Life</li>
+        <li>Nature</li>
+        <li>Love</li>
+        <li>Time and Eternity</li>
+    </ol>
+
+    <h1>Edgar Allan Poe quotes:</h1>
+    <ul class="image-style1">
+        <li>I became insane, with long intervals of horrible sanity.</li>
+        <li>All that we see or seem is but a dream within a dream.</li>
+        <li>There is no exquisite beauty… without some strangeness in the proportion.</li>
+    </ul>
+</body>
+
+</html>

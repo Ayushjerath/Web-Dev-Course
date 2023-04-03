@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This XML document describes a DVD library -->
+<library>
+    <DVD id = "1">
+        <title>The Intersellar</title>
+        <format>Movies</format>
+        <genre>Sci-Fi</genre>
+    </DVD>
+    <DVD id = "2">
+        <title>The Shawshank Redemption</title>
+        <format>Movies</format>
+        <genre>Classic</genre>
+    </DVD>
+    <DVD id = "3">
+        <title>Little Britain</title>
+        <format>TV Serial</format>
+        <genre>Comedy</genre>
+    </DVD>
+</library>

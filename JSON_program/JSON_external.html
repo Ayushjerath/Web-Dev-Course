@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using External JSON ...</title>
+</head>
+<body>
+    <h2>Show data from External JSON file</h2>
+    <p id="pData"></p>
+    <script>
+        fetch("jExternal.json")
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(jExternal){
+            for(var i = 0; i < jExternal.length; i++){
+                document.getElementById("pData").innerHTML += jExternal[i].ID + " - " + jExternal[i].Name + " - " + jExternal[i].Age + "<br>"
+            }
+
+        })
+    </script>
+</body>
+</html>

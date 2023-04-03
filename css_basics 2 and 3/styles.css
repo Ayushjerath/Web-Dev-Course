@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    margin: 0;
+    padding: 2%;
+}
+
+.page{
+    border: 1px solid #665544;
+    background-color: blue;
+    padding: inherit;
+}
+
+h1{
+
+    color: whitesmoke;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+i{
+    color: green;
+}
+b{
+    color: red;
+}
+
+p b{
+    color: blue !important;
+}
+p#intro{
+    font-size: 100%;
+}
+p{
+    font-size: 75%;
+}

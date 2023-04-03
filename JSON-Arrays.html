@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JSON Arrays in JS</title>
+</head>
+<body>
+    <h2>JSON User Account Example</h2>
+    <p id="myuser"></p> 
+    <script>
+        var user = '{"FName" : "Joe" , "LName" : "Smith", "CustomerOrders" : [{"type" : "Red" , "OrderId" : 100} , {"type" : "Blue", "OrderId" : 101 }, {"type" : "Green" , "OrderId":102}]}';
+
+        var jobj = JSON.parse(user);
+        document.getElementById("myuser").innerHTML = jobj.FName +"<br>" 
+        + jobj.LName + "<br>" 
+        + jobj.CustomerOrders[0].OrderId + "<br>" 
+        + jobj.CustomerOrders[0].type + "<br>" 
+        + jobj.CustomerOrders[1].OrderId + "<br>" 
+        + jobj.CustomerOrders[1].type + "<br>" 
+        + jobj.CustomerOrders[2].OrderId + "<br>" 
+        + jobj.CustomerOrders[2].type;
+    </script>
+</body>
+</html>

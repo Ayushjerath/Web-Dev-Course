@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Forms and Fields</title>
+</head>
+
+<body>
+    <h2 align="center"> Test Form</h2>
+    <form action="JSAccessing.html" method="post" name="testform" id="testform" onreset="return confirm('Are you sure?')" onsubmit="alert('Not really sending data'); return true">
+        <label>Name:
+        <input type="text" id="field1" name="field1" size="20" value="Rouf_Khan"></label>
+        <br>
+        <br>
+        <label>Password:
+        <input type="password" id="field2" name="field2" size="10" maxlength="10"></label>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+        <input type="button" value="Do reset" onclick="document.testform.reset();">
+        <input type="button" value="Do submit" onclick="document.testform.submit()">
+    </form>
+    <hr>
+    <h2 align="center">Form Object Properties</h2>
+    <script type="text/javascript">
+        with (document.testform) {
+            document.write("action: " + action + "<br>");
+            document.write("encoding: " + encoding + "<br>");
+            document.write("length: " + length + "<br>")
+            document.write("method: " + method + "<br>")
+            document.write("name: " + name + "<br>")
+            document.write("action: " + action + "<br>");
+            document.write("target: " + target + "<br>");
+            for (var i = 0; i < document.testform.length; i++)
+                document.write("element[" + i + "].type=" +
+                    document.testform.elements[i].type + "<br>")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient in CSS3</title>
+    <style>
+        #gradl {
+            height: 200px;
+            margin-bottom: 50px;
+            background-color: red;
+            background-image: linear-gradient(red, yellow);
+            /* background-image: linear-gradient(to bottom right, red, yellow); */
+            /* background-image: linear-gradient(65deg, red, yellow); */
+        }
+
+        #gradr {
+            height: 150px;
+            margin-bottom: 50px;
+            background-image: radial-gradient(red, yellow, green);
+            /* background-image: radial-gradient(red 5%, yellow 15%, green 60%); */
+            /* background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black); */
+            /* background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black); */
+        }
+
+        #gradc {
+            height: 100px;
+            background-image: conic-gradient(red, yellow, green);
+            /* background-image: conic-gradient(red, yellow, green, blue, black); */
+            /* background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg); */
+            /* background-image: conic-gradient(from 90deg, red, yellow, green); */
+            /* background-image: conic-gradient(at 60% 45%, red, yellow, green); */
+        }
+    </style>
+    <style>
+        /* #gradc {
+            background-image: conic-gradient(red, yellow, green, blue, black);
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="gradl">Hello</div>
+    <div id="gradr">Welcome</div>
+    <div id="gradc">Goodbye</div>
+</body>
+
+</html>
